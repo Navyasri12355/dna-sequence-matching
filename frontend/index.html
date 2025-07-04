@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DNA Matcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DNA Sequence Matching Platform</h1>
+
+    <label for="text"><strong>DNA Sequence:</strong></label><br>
+    <textarea id="text" placeholder="Enter DNA sequence here..." rows="6" cols="80"></textarea><br><br>
+
+    <label for="pattern"><strong>Gene pattern to Search:</strong></label><br>
+    <input type="text" id="pattern" placeholder="Enter gene pattern" size="60"><br><br>
+
+    <label for="algorithm"><strong>Select Algorithm:</strong></label><br>
+    <select id="algorithm">
+        <option value="Naive">Naive</option>
+        <option value="KMP">KMP</option>
+        <option value="Rabin-Karp">Rabin-Karp</option>
+        <option value="Boyer-Moore">Boyer-Moore</option>
+        <option value="Aho-Corasick">Aho-Corasick</option>
+        <option value="Finite Automata">Finite Automata</option> <!-- FIXED name -->
+    </select><br><br>
+
+    <button onclick="runMatch()">▶ Run Selected</button>
+    <button onclick="compareAll()">⚖ Compare All</button>
+
+    <hr>
+
+    <div id="result" style="padding-top: 15px;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

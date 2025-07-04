@@ -1,0 +1,89 @@
+/* Global reset and base styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 30px;
+    background-color: #f2f2f2;
+    color: #333;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+textarea,
+input[type="text"],
+select {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Buttons */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 8px 10px 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Results box */
+#result {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    textarea,
+    input,
+    select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    body {
+        padding: 15px;
+    }
+}
